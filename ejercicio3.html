@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de estructura de control: Condicionales</title>
+    <meta
+      name="description"
+      content="Ejercicios de estructura de control: Condicionales"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 3 🔐 Cambio de contraseña
+
+      Hacer un programa que permita cambiar la contraseña de usuario. 
+      Para eso tiene que responder las tres preguntas de seguridad. Si las 
+      tres preguntas son respondidas correctamente, tiene que pedir por la 
+      nueva contraseña y luego mostrar un mensaje que fue cambiada. 
+      En caso de que al menos alguna pregunta fue respondida incorrectamente 
+      debe mostrar un mensaje advirtiéndolo. Definir de antemano (hardcodear) preguntas y respuestas.*/
+
+      let pregunta1 = "Cual es tu color favorito?";
+      let respuesta1 = "Azul";
+      let pregunta2 = "De que color es tu coche?";
+      let respuesta2 = "Negro";
+      let pregunta3 = "Como se llama tu mascota?";
+      let respuesta3 = "Hera";
+
+      let respuesta1Usuario = prompt(pregunta1);
+      let respuesta2Usuario = prompt(pregunta2);
+      let respuesta3Usuario = prompt(pregunta3);
+
+      if (
+        respuesta1 === respuesta1Usuario &&
+        respuesta2 === respuesta2Usuario &&
+        respuesta3 === respuesta3Usuario
+      ) {
+        let contrasenaNueva = prompt("Introduce la nueva contraseña:");
+        alert(`Contraseña cambiada con exito.`);
+      } else {
+        alert(
+          `Alguna de las preguntas de seguridad no fue respondida correctamente.`
+        );
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Ejercicio 3</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver atras</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

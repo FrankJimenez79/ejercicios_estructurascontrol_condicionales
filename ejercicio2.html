@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de estructura de control: Condicionales</title>
+    <meta
+      name="description"
+      content="Ejercicios de estructura de control: Condicionales"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 2 📆 Días del mes
+
+      Crear un programa que pida por un mes y devuelva la cantidad de días que ese mes tiene.*/
+
+      let mes = prompt("Introduce un mes para saber cuantos dias tiene:");
+
+      if (
+        mes === "Enero" ||
+        mes === "Marzo" ||
+        mes === "Mayo" ||
+        mes === "Julio" ||
+        mes === "Agosto" ||
+        mes === "Octubre" ||
+        mes === "Diciembre"
+      ) {
+        alert(`El mes tiene 31 dias.`);
+      } else if (
+        mes === "Abril" ||
+        mes === "Junio" ||
+        mes === "Septiembre" ||
+        mes === "Noviembre"
+      ) {
+        alert(`El mes tiene 30 dias.`);
+      } else if (mes === "Febrero") {
+        alert(`El mes tiene 28 o 29 dias dependiendo del año.`);
+      } else {
+        alert(`No has introducido un mes correctamente.`);
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Ejercicio 2</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver atras</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

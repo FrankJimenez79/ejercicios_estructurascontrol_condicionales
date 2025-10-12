@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de estructura de control: Condicionales</title>
+    <meta
+      name="description"
+      content="Ejercicios de estructura de control: Condicionales"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 5 Grupo de letras
+
+      Crear un programa que pida al usuario ingresar una letra y mostrar en un mensaje a qué grupo pertenece.
+      grupo A = {a, e, i, o ,u}
+      grupo B = {b, c, d, f, g}
+      grupo C = {h, j, k , l, m}
+      grupo D = {n, p, q, r}
+      grupo E = {s, t, v, w, x, y, z}*/
+
+      let letra = prompt("Introduce una letra:");
+
+      if (
+        letra === "a" ||
+        letra === "e" ||
+        letra === "i" ||
+        letra === "o" ||
+        letra === "u"
+      ) {
+        alert(`La letra pertence al Grupo A.`);
+      } else if (
+        letra === "b" ||
+        letra === "c" ||
+        letra === "d" ||
+        letra === "f" ||
+        letra === "g"
+      ) {
+        alert(`La letra pertence al Grupo B.`);
+      } else if (
+        letra === "h" ||
+        letra === "j" ||
+        letra === "k" ||
+        letra === "l" ||
+        letra === "m"
+      ) {
+        alert(`La letra pertence al Grupo C.`);
+      } else if (
+        letra === "n" ||
+        letra === "p" ||
+        letra === "q" ||
+        letra === "r"
+      ) {
+        alert(`La letra pertence al Grupo D.`);
+      } else {
+        alert(`La letra pertence al Grupo E.`);
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Ejercicio 5</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver atras</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
