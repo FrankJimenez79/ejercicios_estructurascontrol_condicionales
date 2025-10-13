@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de estructura de control: Condicionales</title>
+    <meta
+      name="description"
+      content="Ejercicios de estructura de control: Condicionales"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 6 🥪 Sandwich
+
+      Crear un programa que pregunte al usuario paso por paso qué opciones 
+      desea elegir para armar su pedido. En caso de que no se elija una opción 
+      válida en cualquier paso debe mostrar un mensaje alertando que el pedido 
+      saldrá incompleto. Mostrar al final un mensaje con el pedido resultante. 
+      Debe preguntar:
+      Tipo de pan: blanco, negro, integral
+      Ingrediente 1: tomate, lechuga, pimiento
+      Ingrediente 2: cebolla, aceituna, pepino
+      Aderezos: mostaza, mayonesa, picante
+      Gaseosa: Coca Cola, Pepsi, Sprite*/
+
+      let pan = prompt(
+        "Que tipo de pan quiere? blanco,negro o integral"
+      ).toLowerCase();
+      if (pan !== "blanco" && pan !== "negro" && pan !== "integral") {
+        alert(`Opcion no valida, su pedido saldra incompleto.`);
+        pan = "sin definir";
+      }
+      let ingrediente1 = prompt(
+        "Quiere tomate, lechuga o pimiento?"
+      ).toLowerCase();
+      if (
+        ingrediente1 !== "tomate" &&
+        ingrediente1 !== "lechuga" &&
+        ingrediente1 !== "pimiento"
+      ) {
+        alert(`Opcion no valida, su pedido saldra incompleto.`);
+        ingrediente1 = "sin definir";
+      }
+      let ingrediente2 = prompt(
+        "Quiere cebolla,aceituna o pepino?"
+      ).toLowerCase();
+      if (
+        ingrediente2 !== "cebolla" &&
+        ingrediente2 !== "aceituna" &&
+        ingrediente2 !== "pepino"
+      ) {
+        alert(`Opcion no valida, su pedido saldra incompleto.`);
+        ingrediente2 = "sin definir";
+      }
+      let aderezo = prompt(
+        "Que salsa quiere? mostaza, mayonesa o picante"
+      ).toLowerCase();
+      if (
+        aderezo !== "mostaza" &&
+        aderezo !== "mayonesa" &&
+        aderezo !== "picante"
+      ) {
+        alert(`Opcion no valida, su pedido saldra incompleto.`);
+        aderezo = "sin definir";
+      }
+      let bebida = prompt(
+        "Que bebida quiere? cocacola, pepsi o sprite"
+      ).toLowerCase();
+      if (bebida !== "cocacola" && bebida !== "pepsi" && bebida !== "sprite") {
+        alert(`Opcion no valida, su pedido saldra incompleto.`);
+        bebida = "sin definir";
+      }
+
+      alert(
+        `Su pedido sera con pan ${pan}, con ${ingrediente1}, y ${ingrediente2}, con salsa de ${aderezo} y de bebida ${bebida}.`
+      );
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Ejercicio 6</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver atras</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

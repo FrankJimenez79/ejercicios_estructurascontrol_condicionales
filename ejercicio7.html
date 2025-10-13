@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de estructura de control: Condicionales</title>
+    <meta
+      name="description"
+      content="Ejercicios de estructura de control: Condicionales"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 7 ✊🤚✌️ Piedra, papel o tijera
+
+      Crear un programa que permita ingresar al jugador piedra, papel o tijera, 
+      genere de forma aleatoria la jugada de la computadora, y muestre en un mensaje 
+      quién ganó, con las jugadas respectivas.*/
+
+      let jugadaUsuario = prompt(
+        "Elige: Piedra, papel o tijera?"
+      ).toLowerCase();
+
+      let jugadaComputadora = Math.floor(Math.random() * 3);
+      if (jugadaComputadora === 0) {
+        jugadaComputadora = "piedra";
+      }
+      if (jugadaComputadora === 1) {
+        jugadaComputadora = "papel";
+      }
+      if (jugadaComputadora === 2) {
+        jugadaComputadora = "tijera";
+      }
+
+      if (jugadaUsuario === jugadaComputadora) {
+        alert(
+          `Usuario: ${jugadaUsuario} Computadora: ${jugadaComputadora} ----> Empate.`
+        );
+      } else if (jugadaUsuario === "piedra" && jugadaComputadora === "tijera") {
+        alert(
+          `Usuario: ${jugadaUsuario} Computadora: ${jugadaComputadora} ----> Gana Usuario.`
+        );
+      } else if (jugadaUsuario === "papel" && jugadaComputadora === "piedra") {
+        alert(
+          `Usuario: ${jugadaUsuario} Computadora: ${jugadaComputadora} ----> Gana Usuario.`
+        );
+      } else if (jugadaUsuario === "tijera " && jugadaComputadora === "papel") {
+        alert(
+          `Usuario: ${jugadaUsuario} Computadora: ${jugadaComputadora} ----> Gana Usuario.`
+        );
+      } else {
+        alert(
+          `Usuario: ${jugadaUsuario} Computadora: ${jugadaComputadora} ----> Gana Computadora.`
+        );
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Ejercicio 7</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver atras</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
