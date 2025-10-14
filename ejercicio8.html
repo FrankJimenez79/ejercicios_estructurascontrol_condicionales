@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de estructura de control: Condicionales</title>
+    <meta
+      name="description"
+      content="Ejercicios de estructura de control: Condicionales"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 8 🎨 Simón dice
+
+      Crear un programa que muestre una secuencia de 5 nombres de colores
+      en orden aleatorio. Los colores posibles son 4: rojo, verde, azul y amarillo.
+      Pedir luego ingresar 5 colores uno por uno, y mostrar al finalizar si acertó la secuencia.
+      // Ejemplo
+      Simón dice: rojo, rojo, azul, verde, amarillo.
+
+      Ingrese el primer color: rojo
+      Ingrese el primer color: rojo
+      Ingrese el primer color: azul
+      Ingrese el primer color: verde
+      Ingrese el primer color: amarillo
+
+      Felicitaciones! Has ganado!*/
+
+      let color;
+      let secuencia = "";
+      let secuencia2 = "";
+
+      for (let i = 0; i < 5; i++) {
+        let numero = Math.floor(Math.random() * 4);
+        if (numero === 0) {
+          color = "rojo";
+        } else if (numero === 1) {
+          color = "verde";
+        } else if (numero === 2) {
+          color = "azul";
+        } else {
+          color = "amarillo";
+        }
+        secuencia = secuencia + color;
+
+        if (i < 4) {
+          secuencia = secuencia + ",";
+        }
+      }
+
+      alert(`Simon dice; ${secuencia}.`);
+
+      for (let i = 0; i < 5; i++) {
+        let colorUsuario = prompt("Introduce siguiente color:")
+          .toLowerCase()
+          .trim();
+        secuencia2 = secuencia2 + colorUsuario;
+        if (i < 4) {
+          secuencia2 = secuencia2 + ",";
+        }
+      }
+      alert(`Usuario dice: ${secuencia2}`);
+
+      if (secuencia === secuencia2) {
+        alert(`Enhorabuena has acertado todos los colores.`);
+      } else {
+        alert(`Lo siento. los colores no coinciden.`);
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Ejercicio 8</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver atras</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
