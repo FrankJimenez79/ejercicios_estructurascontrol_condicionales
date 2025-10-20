@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de estructura de control: Condicionales</title>
+    <meta
+      name="description"
+      content="Ejercicios de estructura de control: Condicionales"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 11 🧮 Calculadora
+
+      Crear un programa que permita elegir entre las operaciones: 
+      SUMA, RESTA, DIVISION y MULTIPLICACION, y luego de elegida, 
+      ingresar dos números y hacer dicha operación con ella.*/
+
+      let operacion = prompt(
+        "Elige una operacion a realizar SUMAR/RESTAR/MULTIPLICAR/DIVIDIR:"
+      )
+        .trim()
+        .toLowerCase();
+
+      let numero1 = Number(prompt("Ahora dime el primer numero:"));
+      let numero2 = Number(prompt("Ahora dime el segundo numero:"));
+
+      if (!operacion) {
+        alert(`Por favor introduce un tipo de operación.`);
+      } else {
+        switch (operacion) {
+          case "sumar":
+            resultado = numero1 + numero2;
+            alert(
+              `El resultado de sumar ${numero1} mas ${numero2} es ${resultado}.`
+            );
+            break;
+          case "restar":
+            resultado = numero1 - numero2;
+            alert(
+              `El resultado de restar ${numero1} menos ${numero2} es ${resultado}.`
+            );
+            break;
+          case "multiplicar":
+            resultado = numero1 * numero2;
+            alert(
+              `El resultado de multiplicar ${numero1} por ${numero2} es ${resultado}.`
+            );
+            break;
+          case "dividir":
+            resultado = numero1 / numero2;
+            alert(
+              `El resultado de dividir ${numero1} entre ${numero2} es ${resultado}.`
+            );
+            break;
+          default:
+            alert(`No has introducido ninguna operación valida.`);
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Ejercicio 11</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver atras</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

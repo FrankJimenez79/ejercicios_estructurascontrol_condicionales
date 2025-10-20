@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de estructura de control: Condicionales</title>
+    <meta
+      name="description"
+      content="Ejercicios de estructura de control: Condicionales"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 10 ❄️ Estaciones del año II
+
+      Crear un programa que pida una estación del año y mostrar en un 
+      mensaje la fecha en la que comienza y termina*/
+
+      let estacion = prompt("Escribe una estación del año:")
+        .trim()
+        .toLowerCase();
+
+      switch (estacion) {
+        case "primavera":
+          alert(
+            `Esta estacion ${estacion} empieza el 20 de Marzo y acaba el 21 de Junio.`
+          );
+          break;
+        case "verano":
+          alert(
+            `Esta estacion ${estacion} empieza el 21 de Junio y acaba el 22 de Septiembre.`
+          );
+          break;
+        case "otoño":
+          alert(
+            `Esta estacion ${estacion} empieza el 22 de Septiembre y acaba el 21 de Diciembre.`
+          );
+          break;
+        case "invierno":
+          alert(
+            `Esta estacion ${estacion} empieza el 21 de Diciembre y acaba el 20 de Marzo.`
+          );
+          break;
+        default:
+          alert(`No has escrito ninguna estacion valida.`);
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Ejercicio 10</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver atras</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
