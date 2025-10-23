@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de estructura de control: Condicionales</title>
+    <meta
+      name="description"
+      content="Ejercicios de estructura de control: Condicionales"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 12 📺 Televisor
+
+      Hacer un programa que empiece preguntando si se desea prender el televisor. 
+      Si elige que no, el programa debe terminar. Si elige que sí, debe mostrar un 
+      mensaje con el canal actual y el el nivel de volumen de un televisor, y debe 
+      permitir realizar las siguientes operaciones:
+      CAMBIAR CANAL: permite ingresar un canal (0 al 99)
+      CANAL SIGUIENTE: sube un canal
+      CANAL ANTERIOR: baja un canal
+      SUBIR VOLUMEN: sube en volumen en 5
+      BAJAR VOLUMEN: disminuye en volumen en 5
+      MUTEAR: pone el volumen en 0
+      Una vez elegida la opción e ingresado el valor si corresponde, debe mostrar un 
+      mensaje con el canal y el nivel del volumen actual.*/
+
+      let encender = prompt("Quieres encender el televisor? SI/NO")
+        .trim()
+        .toLowerCase();
+      let canal = 5;
+      let volumen = 3;
+
+      if (encender === "no") {
+        alert(`Television apagada`);
+      } else {
+        alert(
+          `La television esta en el canal ${canal} y en el nivel ${volumen} de volumen.`
+        );
+        let opcion = prompt(
+          `Elige una opcion: 1.CAMBIAR CANAL 2.CANAL SIGUIENTE 3.CANAL ANTERIOR 4.SUBIR VOLUMEN 5.BAJAR VOLUMEN 6.MUTEAR`
+        );
+        switch (opcion) {
+          case "1":
+            let canalNuevo = prompt("A que canal quieres cambiar?");
+            alert(
+              `La television ha cambiado al canal ${canalNuevo} y en el nivel ${volumen} de volumen.`
+            );
+            break;
+          case "2":
+            canal = canal + 1;
+            alert(
+              `La televison ha cambiado al canal ${canal} y en el nivel ${volumen} de volumen.`
+            );
+            break;
+          case "3":
+            canal = canal - 1;
+            alert(
+              `La televison ha cambiado al canal ${canal} y en el nivel ${volumen} de volumen.`
+            );
+            break;
+          case "4":
+            volumen = volumen + 5;
+            alert(
+              `La televison esta en el canal ${canal} y ha subido al nivel ${volumen} de volumen.`
+            );
+            break;
+          case "5":
+            volumen = volumen - 5;
+            alert(
+              `La televison esta en el canal ${canal} y ha bajado al nivel ${volumen} de volumen.`
+            );
+            break;
+          case "6":
+            volumen = 0;
+            alert(
+              `La televison esta en el canal ${canal} y ha bajado al nivel ${volumen} de volumen.`
+            );
+            break;
+          default:
+            alert(`No has introducio una opcion valida.`);
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h2>Ejercicio 12</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Volver atras</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
